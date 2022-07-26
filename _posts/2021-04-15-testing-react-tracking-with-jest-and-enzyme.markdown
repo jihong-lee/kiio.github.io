@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "Testing React Tracking with Jest and Enzyme"
 date: 2021-04-15
 categories: [testing, tracking, volt, cms, enzyme, react-tracking]

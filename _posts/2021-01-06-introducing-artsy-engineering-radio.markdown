@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "Introducing Artsy Engineering Radio"
 date: 2021-01-06
 categories: [podcast, community, learning]

@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "Relay Pagination Containers Demystified"
 date: 2020-08-31
 categories: [react, relay, culture]

@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "iOS Deploys: Super Weird And Totally Normal"
 date: 2020-03-02
 categories: [ios, deployment, continuous deployment, fastlane]

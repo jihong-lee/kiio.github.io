@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: Using Context to Simplify a VERY Large React Form
 subtitle: How We Took Incremental Steps to Revamp the Artwork Form at Artsy
 date: 2022-02-01
@@ -103,20 +103,22 @@ Here are the steps we took to do this conversion:
    Here is an example of `TestFormikWrapper` used in a test:
 
 {% raw %}
-   ```tsx
-   describe("TestComponent", () => {
-     it("displays values", () => {
-       const wrapper = mount(
-         <TestFormikWrapper values={{ name: "Andy Warhol" }}>
-           <TestComponent />
-         </TestFormikWrapper>
-       )
 
-       const name = wrapper.find("#name").html()
-       expect(name).toInclude("Andy Warhol")
-     })
-   })
-   ```
+```tsx
+describe("TestComponent", () => {
+  it("displays values", () => {
+    const wrapper = mount(
+      <TestFormikWrapper values={{ name: "Andy Warhol" }}>
+        <TestComponent />
+      </TestFormikWrapper>
+    )
+
+    const name = wrapper.find("#name").html()
+    expect(name).toInclude("Andy Warhol")
+  })
+})
+```
+
 {% endraw %}
 
 4. Once we completed the conversion all the way up the tree to the root component, the `ArtworkForm`, we typed that

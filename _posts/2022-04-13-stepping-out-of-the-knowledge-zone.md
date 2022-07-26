@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: Stepping Out Of The Knowledge Zone
 subtitle: How I went out to face my fears
 date: 2022-04-13

@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: From engineering to product management, and back again
 date: 2020-07-23
 author: will

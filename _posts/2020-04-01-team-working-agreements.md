@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "Team Working Agreements"
 date: "2020-04-01"
 author: [steve-hicks, adam]

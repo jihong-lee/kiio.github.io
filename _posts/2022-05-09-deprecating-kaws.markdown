@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "Third Time's the Charm: Deprecating KAWS"
 subtitle: What we learned from spinning down one of our APIs
 date: 2022-05-09

@@ -9,21 +9,12 @@ footer: false
     <span class="byline author vcard {% if forloop.first %}first{% endif %}">
 
       <div class="meta"><span class="fn">{{ author.name }}</span>
-      {% if author.twitter %}
-      <span class="fn twitter">
-         - <a href="https://twitter.com/{{ author.twitter }}">@{{author.twitter}}</a>
-      </span>
-      {% endif %}
       </div>
     </span>  
   {% endfor %}
 </div>
 
 <div class="index-main" style="padding-top:40px">
-  <p>
-    {{ page.series | series_bio }}
-  </p>
-
 {% for post in page.posts %}
   <article>
     {% include archive_post.html %}

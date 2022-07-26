@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "Improve Pull Requests By Including Valuable Context"
 date: "2020-08-11"
 author: [steve-hicks]

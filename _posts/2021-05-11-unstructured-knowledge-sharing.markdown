@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "Unstructured Knowledge Sharing"
 date: 2021-05-11
 categories: [teams, culture, people]

@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "Why Asking for Help Strengthens Engineering Teams"
 date: 2021-02-11
 categories: [team, culture, community, learning, teaching]
@@ -104,11 +104,16 @@ career will pay dividends to my team in the months and years to come.
 
 So yes, I went ahead and pressed send on that Slack to ask for help.
 
-[how-losing-my-job-helped-me-find-my-way-back]: https://medium.com/swlh/how-losing-my-job-helped-me-find-my-way-back-8c8f86552acc
-[why-women-don't-pursue-software-engineering]: https://medium.com/better-programming/why-women-dont-pursue-software-engineering-17d0dead24e9
-[impostor-syndrome-leaves-most-tech-workers-feeling-like-a-fake]: https://www.cnet.com/news/tech-employees-likely-to-suffer-from-impostor-syndrome/
-[why-imposter-syndrome-is-worse-for-women-of-color]: https://zora.medium.com/why-imposter-syndrome-is-worse-for-women-of-color-3bcf37335405
+[how-losing-my-job-helped-me-find-my-way-back]:
+  https://medium.com/swlh/how-losing-my-job-helped-me-find-my-way-back-8c8f86552acc
+[why-women-don't-pursue-software-engineering]:
+  https://medium.com/better-programming/why-women-dont-pursue-software-engineering-17d0dead24e9
+[impostor-syndrome-leaves-most-tech-workers-feeling-like-a-fake]:
+  https://www.cnet.com/news/tech-employees-likely-to-suffer-from-impostor-syndrome/
+[why-imposter-syndrome-is-worse-for-women-of-color]:
+  https://zora.medium.com/why-imposter-syndrome-is-worse-for-women-of-color-3bcf37335405
 [on-pair-programming]: https://martinfowler.com/articles/on-pair-programming.html
-[people-are-willing-to-earn-less-money-to-do-more-meaningful-work]: https://hbr.org/2018/11/9-out-of-10-people-are-willing-to-earn-less-money-to-do-more-meaningful-work
+[people-are-willing-to-earn-less-money-to-do-more-meaningful-work]:
+  https://hbr.org/2018/11/9-out-of-10-people-are-willing-to-earn-less-money-to-do-more-meaningful-work
 
 > _This post originally appeared on Anna's blog on [Medium](https://anna-carey.medium.com/)._

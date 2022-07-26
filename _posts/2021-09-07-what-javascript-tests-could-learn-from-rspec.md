@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "What JavaScript Tests Could Learn From RSpec"
 date: 2021-09-10
 categories: [testing, rspec, jest]
@@ -161,7 +161,9 @@ Here's what I'd do in JavaScript/Jest to accomplish something similar:
 ```js
 describe("Calculator", () => {
   let calculator
-  beforeEach(() => { calculator = new Calculator() })
+  beforeEach(() => {
+    calculator = new Calculator()
+  })
 
   describe(".multiply", () => {
     let first, second
@@ -170,10 +172,14 @@ describe("Calculator", () => {
     }
 
     describe("when the first value is negative", () => {
-      beforeEach(() => { first = -1 })
+      beforeEach(() => {
+        first = -1
+      })
 
       describe("when the second value is negative", () => {
-        beforeEach(() => { second = -3 })
+        beforeEach(() => {
+          second = -3
+        })
 
         it("returns a positive number", () => {
           expect(getResult()).toEqual(3)
@@ -181,7 +187,9 @@ describe("Calculator", () => {
       })
 
       describe("when the second value is positive", () => {
-        beforeEach(() => { second = 3 })
+        beforeEach(() => {
+          second = 3
+        })
 
         it("returns a negative number", () => {
           expect(getResult()).toEqual(-3)
@@ -201,7 +209,9 @@ JavaScript looking more like this:
 ```javascript
 describe("Calculator", () => {
   let calculator
-  beforeEach(() => { calculator = new Calculator() })
+  beforeEach(() => {
+    calculator = new Calculator()
+  })
 
   describe(".multiply", () => {
     it("returns a positive number when the first number is negative and the second number is negative", () => {

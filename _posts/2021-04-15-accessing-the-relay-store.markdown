@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "Accessing the Relay Store Without a Mutation"
 date: 2021-04-15
 categories: [relay, graphql, react, redis, tooling]
@@ -91,8 +91,8 @@ becomes stale.) If the user refreshes the page, the list is correct: The up-to-d
 passed into our component and used in the Relay query. But without refreshing the page, we need to make sure that
 the list in the UI updates when the user snoozes an item.
 
-The initial fix was to use a local state variable to keep track of which items were snoozed. We defined the following variable in the parent
-React component that renders the list:
+The initial fix was to use a local state variable to keep track of which items were snoozed. We defined the
+following variable in the parent React component that renders the list:
 
 ```js
 const [localSnoozedItems, setLocalSnoozedItems] = useState([])
@@ -100,8 +100,9 @@ const [localSnoozedItems, setLocalSnoozedItems] = useState([])
 
 We passed `localSnoozedItems ` and `setLocalSnoozedItems` down to each of the children items. When the “snooze”
 button was pressed on an item, the `localSnoozedItems` in the parent was updated with the complete list of snoozed
-items. The parent then controls which items get rendered. We used the `localSnoozedItems` list to filter the connection
-returned from our Relay query (which remember, is already filtered based on our Redis `excludeIDs` from Redis.)
+items. The parent then controls which items get rendered. We used the `localSnoozedItems` list to filter the
+connection returned from our Relay query (which remember, is already filtered based on our Redis `excludeIDs` from
+Redis.)
 
 This worked, but it definitely did not feel great to have two sources of truth for snoozing: The Redis key and the
 local state variable.
@@ -109,16 +110,16 @@ local state variable.
 ## Solution: Deleting a Record From the Relay Store
 
 Cue the [RelayModernStore][relay-documentation-relay-modern-store]! I learned that Relay keeps track of the GraphQL
-data returned by each query in a store on the client. Each record in the store has a unique ID, and the store can be
-changed, added to, and deleted from. There are a couple of helpful blog posts (like
+data returned by each query in a store on the client. Each record in the store has a unique ID, and the store can
+be changed, added to, and deleted from. There are a couple of helpful blog posts (like
 [this][deep-dive-into-the-relay-store] and
 [this][wrangling-the-client-store-with-the-relay-modern-updater-function]) that explain the store and how to
 interact with it.
 
 In most of the Relay documentation, blog posts, and Artsy’s uses cases, the store is accessed through an `updater`
 function via [mutations][relay-documentation-mutations]. [Updater functions][relay-documentation-updater-functions]
-that return the store in the first argument can optionally be added to Relay mutations. Inside that function, you can access
-the store to modify the records you need.
+that return the store in the first argument can optionally be added to Relay mutations. Inside that function, you
+can access the store to modify the records you need.
 
 Here's an example:
 
@@ -146,8 +147,8 @@ that returns the store in the first argument. We now have access to the store!
 
 ## Deleting a Connection Node with ConnectionHandler
 
-My main hurdle during this journey was finding an appropriate way to hook into the store for our specific use case—when we do
-not require an update to server data.
+My main hurdle during this journey was finding an appropriate way to hook into the store for our specific use
+case—when we do not require an update to server data.
 
 But to close us out: Let's finish the job and delete the item from the connection in the store.
 
@@ -196,13 +197,16 @@ commitLocalUpdate(relay.environment, (store) => {
 
 [relay-docs]: https://relay.dev/
 [why-does-artsy-use-relay]: https://artsy.github.io/blog/2019/04/10/omakase-relay/
-[how-losing-my-way-helped-me-find-my-way-back]: https://medium.com/swlh/how-losing-my-job-helped-me-find-my-way-back-8c8f86552acc
+[how-losing-my-way-helped-me-find-my-way-back]:
+  https://medium.com/swlh/how-losing-my-job-helped-me-find-my-way-back-8c8f86552acc
 [about-redis]: https://redis.io/
 [relay-documentation-relay-modern-store]: https://relay.dev/docs/api-reference/store/
 [deep-dive-into-the-relay-store]: https://yashmahalwal.medium.com/a-deep-dive-into-the-relay-store-9388affd2c2b
-[wrangling-the-client-store-with-the-relay-modern-updater-function]: https://medium.com/entria/wrangling-the-client-store-with-the-relay-modern-updater-function-5c32149a71ac
+[wrangling-the-client-store-with-the-relay-modern-updater-function]:
+  https://medium.com/entria/wrangling-the-client-store-with-the-relay-modern-updater-function-5c32149a71ac
 [relay-documentation-mutations]: https://relay.dev/docs/guided-tour/updating-data/graphql-mutations/
-[relay-documentation-updater-functions]: https://relay.dev/docs/guided-tour/updating-data/graphql-mutations/#updater-functions
+[relay-documentation-updater-functions]:
+  https://relay.dev/docs/guided-tour/updating-data/graphql-mutations/#updater-functions
 [relay-documentation-local-data-updates]: https://relay.dev/docs/guided-tour/updating-data/local-data-updates/
 [relay-documentation-connection-handler]: https://relay.dev/docs/api-reference/store/#connectionhandler
 [relay-modern-connection-derivative]: https://www.prisma.io/blog/relay-moderns-connection-directive-1ecd8322f5c8

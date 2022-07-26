@@ -1,5 +1,5 @@
 ---
-layout: epic
+layout: post
 title: "A Year in Review: 2021"
 date: 2022-01-06
 categories: [team, engineering]
@@ -9,7 +9,8 @@ comment_id: 714
 
 Ufff, 2021 was a tough year. It was the second year of the Covid-19 pandemic. We tried our best to support each
 other through these challenging times and in that spirit, we feel like it's important not to lose sight of our
-accomplishments. As we say goodbye to 2021 and hello to 2022, here are some Artsy Engineering wins from this past year.
+accomplishments. As we say goodbye to 2021 and hello to 2022, here are some Artsy Engineering wins from this past
+year.
 
 What did you ship in 2021? We would love to hear about it and celebrate with you!
 
@@ -18,7 +19,8 @@ What did you ship in 2021? We would love to hear about it and celebrate with you
 - Recorded and released 42 episodes of the [Artsy Engineering Radio][]
 - Onboarded 23 engineers in Berlin, Germany
 - Leveraged our investment in React Native to launch the [Artsy Android App][]
-- We [opened][] 13,368 pull requests! 12,054 were [merged][] and 1,050 were [closed][]. (note: includes contributions in private repositories)
+- We [opened][] 13,368 pull requests! 12,054 were [merged][] and 1,050 were [closed][]. (note: includes
+  contributions in private repositories)
 - Responded to and resolved 29 incidents
 - Collaborated with [iTechArt][] engineers on impactful projects
 - Migrated more repositories to deploy continuously
@@ -31,11 +33,14 @@ What did you ship in 2021? We would love to hear about it and celebrate with you
 - Launched our a new recommendation model (codenamed "affinity score")
 - Developed an in-house auction results pipeline
 - Launched improvements to our recommendations (New Works for You) for the first time in a while!
-- Launched integrations with [Arta][] (shipping), [Avalara][] (tax compliance), [Algolia][] (search), [Adjust][] (analytics), [Braze][] (marketing), and [Postie][] (marketing).
+- Launched integrations with [Arta][] (shipping), [Avalara][] (tax compliance), [Algolia][] (search), [Adjust][]
+  (analytics), [Braze][] (marketing), and [Postie][] (marketing).
 - Moved 38+ of [Force][] (artsy.net) apps to a new and improved V2 setup
-- Rebuilt our design system [Palette][], updated its documentation, and migrated many web and mobile surfaces to the new look
+- Rebuilt our design system [Palette][], updated its documentation, and migrated many web and mobile surfaces to
+  the new look
 - Rebuilt our artwork inquiry flow! Finally!
-- Migrated to a new marketing email service provider without incident (described as a project “i wouldn’t wish on my worst enemy”)
+- Migrated to a new marketing email service provider without incident (described as a project “i wouldn’t wish on
+  my worst enemy”)
 - Added Make Offer support for artwork inquiries
 - Hired our first agile coach!
 - Tech leads are taking more ownership over the success of their teams
@@ -45,23 +50,24 @@ What did you ship in 2021? We would love to hear about it and celebrate with you
 - Spun up a trial integration with [Split][] (experimentation and feature flagging vendor)
 
 [opened]: https://github.com/pulls?q=is%3Apr+user%3Aartsy+created%3A%3E%3D2021-01-01+-created%3A%3E%3D2022-01-01
-[merged]: https://github.com/pulls?q=is%3Apr+user%3Aartsy+created%3A%3E%3D2021-01-01+-created%3A%3E%3D2022-01-01+is%3Amerged+merged%3A%3C%3D2021-12-31
-[closed]: https://github.com/pulls?q=is%3Apr+user%3Aartsy+created%3A%3E%3D2021-01-01+-created%3A%3E%3D2022-01-01+is%3Aclosed+is%3Aunmerged
-
-[Adjust]: https://www.adjust.com
-[Algolia]: https://algolia.com
-[Applause]: https://www.applause.com
-[Arta]: https://arta.io
-[Artbase]: https://www.artbase.com
-[Artsy Android App]: https://play.google.com/store/apps/details?id=net.artsy.app
-[Artsy Engineering Radio]: https://www.buzzsprout.com/1781859
-[Artsystems]: https://www.applause.com
-[Avalara]: https://www.avalara.com
-[Braze]: https://www.braze.com
-[Core Web Vitals]: https://web.dev/vitals
-[iTechArt]: https://www.itechart.com
-[Force]: https://github.com/artsy/force
-[Palette]: https://github.com/artsy/palette
-[Postie]: https://postie.com
-[Split]: https://www.split.io
+[merged]:
+  https://github.com/pulls?q=is%3Apr+user%3Aartsy+created%3A%3E%3D2021-01-01+-created%3A%3E%3D2022-01-01+is%3Amerged+merged%3A%3C%3D2021-12-31
+[closed]:
+  https://github.com/pulls?q=is%3Apr+user%3Aartsy+created%3A%3E%3D2021-01-01+-created%3A%3E%3D2022-01-01+is%3Aclosed+is%3Aunmerged
+[adjust]: https://www.adjust.com
+[algolia]: https://algolia.com
+[applause]: https://www.applause.com
+[arta]: https://arta.io
+[artbase]: https://www.artbase.com
+[artsy android app]: https://play.google.com/store/apps/details?id=net.artsy.app
+[artsy engineering radio]: https://www.buzzsprout.com/1781859
+[artsystems]: https://www.applause.com
+[avalara]: https://www.avalara.com
+[braze]: https://www.braze.com
+[core web vitals]: https://web.dev/vitals
+[itechart]: https://www.itechart.com
+[force]: https://github.com/artsy/force
+[palette]: https://github.com/artsy/palette
+[postie]: https://postie.com
+[split]: https://www.split.io
 [unstuck]: https://youtu.be/3XscuivvUzI

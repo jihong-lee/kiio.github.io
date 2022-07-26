@@ -13,7 +13,7 @@ $(function() {
           $("body").css( "background-color", "white" )
           isWhite = true
         } else if (!shouldBeWhite && isWhite) {
-          $("body").css( "background-color", "#dafffd" )
+          $("body").css( "background-color", "white" ) // change back to #dafffd if necessary
           isWhite = false
         }
     };

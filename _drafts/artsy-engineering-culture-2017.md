@@ -1,5 +1,5 @@
 ---
-layout: post_longform
+layout: post
 title: Artsy's Culture Stack, 2017
 date: 2017-03-05
 categories: [Technology, eigen, force, gravity]

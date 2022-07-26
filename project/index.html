@@ -1,0 +1,69 @@
+---
+layout: "default"
+title: "Projects"
+description: "Dabbling in all sorts of things."
+section: project
+comments: false
+sharing: false
+footer: true
+exclude_from_search: true
+---
+<div id="page-sidebar">
+  <ul>
+    <li><a href="#ml">Machine Learning</a></li>
+    <li><a href="#uiux">UI / UX</a></li>
+  </ul>
+</div>
+<div id="project-content">
+  <div id="lead">
+    <h1>Here's what I've been up to.</h1>
+  </div>
+  {% assign categories = "featured, javascript, ios, ruby, devops" | split: ", " %}
+  {% for category in categories %}
+    <section id="{{category}}" class="open-source-category">
+      <div class="project-category-header"><div class="open-source-category-header-title"><span><b>Title</b></span></div><div class="project-category-header-description"><span><b>Description</b></span></div><div class="project-category-header-updated"><span><b>Created</b></span></div><footer></footer></div>
+      {% for project in site.project %}
+        {% if project["category"] == category %}
+          {% capture project %}{{ project }}{% endcapture %}
+          {% include project/project_page.html %}
+        {% endif %}
+      {% endfor %}
+    </section>
+  {% endfor %}
+</div>
+<footer>
+</footer>
+
+
+<script type="text/javascript">
+// stick open source category sidebar
+var sticky = new Waypoint.Sticky({
+    element: $("#page-sidebar"),
+    handler: function(direction) {
+  },
+  offset: 210
+})
+
+// scroll to each section smoothly
+$('#page-sidebar a').click( function() {
+  var section = $(this).attr("href");
+  $('html, body').animate({
+    scrollTop: ($(section).offset().top - 210)
+  }, 800);
+});
+
+// set active section when scrolled to
+$("section").each( function(index, category) {
+  var waypoint = new Waypoint({
+    element: category,
+    handler: function(direction) {
+      var active_section = $(category);
+      if (direction === "up") active_section = active_section.prev();
+      var active_link = $('#page-sidebar a[href="#' + active_section.attr('id') + '"]');
+      $('#page-sidebar a').removeClass("selected");
+      active_link.addClass("selected");
+    },
+    offset: 250
+  })
+})
+</script>
