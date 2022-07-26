@@ -10,8 +10,8 @@
 @import "partials/syntax";
 @import "custom/styles";
 
-$highlight-color: #6A00CC;
-$text-color: #636;
+$highlight-color: #d41c5c;
+$text-color: rgb(98, 21, 37);
 
 @mixin ellipsis {
   text-overflow: ellipsis;
@@ -168,7 +168,7 @@ blockquote {
   $width: 25px;
   $height: 6px;
   display: inline-block;
-  background: #6e1fff;
+  background: #ff1f53;
   width: $width;
   height: $height;
   top: calc(50% - #{$height} / 2);
