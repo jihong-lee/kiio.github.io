@@ -2,7 +2,6 @@ source "https://rubygems.org"
 
 gem 'rake'
 gem 'jekyll'
-gem 'octopress-hooks'
 gem 'kramdown-parser-gfm'
 gem 'pry'
 gem 'mp3info'
