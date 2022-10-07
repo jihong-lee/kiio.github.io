@@ -63,7 +63,6 @@ jupyter:
 First, let\'s grab the necessary Python packages:
 :::
 
-::: {.cell .code execution_count="158"}
 ``` {.python}
 import pandas as pd
 import numpy as np
@@ -78,7 +77,6 @@ import math
 sns.set_context('paper')
 style.use('ggplot')
 ```
-:::
 
 ::: {.cell .markdown}
 ## Get the Data
