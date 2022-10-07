@@ -26,6 +26,8 @@ jupyter:
 
 A sorting algorithm **rearranges the elements in a given list into a particular order**, where the most frequently used orders are numerical or lexicographical, ascending or descending. Sorting algorithms are important as they are extremely useful in reducing complexities of problems that require input data to be in sorted lists.
 
+All sorting algorithms return output that is:
+
 I am going to organize the most common sorting algorithms in this post.
 
 <!-- more -->
@@ -33,7 +35,6 @@ I am going to organize the most common sorting algorithms in this post.
 ## Classifying Sorting Algorithms
 
 Sorting algorithms can be categorized according to the following parameters:
-
 1. **computational complexity of swaps**
 2. **computational complexity of comparisons**
 3. **space complexity**
