@@ -24,7 +24,7 @@ jupyter:
   nbformat_minor: 5
 ---
 
-A sorting algorithm **rearranges elements in a given array into a particular order**, where the most-used orders are numerical or lexicographical. Sorting algorithms are important as they are extremely useful in reducing complexities of problems.
+A sorting algorithm **rearranges the elements in a given list into a particular order**, where the most frequently used orders are numerical or lexicographical, ascending or descending. Sorting algorithms are important as they are extremely useful in reducing complexities of problems that require input data to be in sorted lists.
 
 I am going to organize the most common sorting algorithms in this post.
 
