@@ -1,22 +1,49 @@
 ---
 layout: post
-title: "Third Time's the Charm: Deprecating KAWS"
+title: "Jihong's Machine Learning Self-Study Roadmap"
 subtitle: What we learned from spinning down one of our APIs
-date: 2022-05-09
-categories: [KAWS refactoring gravity]
-author: [matt-dole, roop]
-comment_id: 730
+date: 2022-07-28
+categories: [machine learning, studying the technicals]
+author: [jihong]
 ---
 
-How do you tell when it's time to deprecate a system? If something mostly works OK, is it worth spending time and
-effort replacing its functionality?
+A good chunk of my professional experience (i.e. internships, research) so far has involved some flavor of machine learning and I've already taken two different courses during college on machine learning, one with a  technical focus and the other with a statistical focus.
 
-At Artsy, we realized several years ago that we needed to be able to group a bunch of artworks together. If we
-wanted to have a page with all of the
-[ceramics by Lucio Fontana](https://www.artsy.net/collection/lucio-fontana-ceramics), or
-[contemporary prints from the IFPDA Fair Sprint 2022](https://www.artsy.net/collection/buy-now-contemporary-prints-in-the-ifpda-fair-spring-2022),
-or a [gift guide curated by Antwaun Sargent](https://www.artsy.net/collection/antwaun-sargents-wishlist), we needed
-to have a way to make that happen.
+My knowledge on the subject is still so painfully rudimentary. So I should change that.
+
+My experience with ML so far has been very top-down: I have a task and I learn just enough tools to finish the specific task and move on. In starting this "series", I hope to take on a more bottom-up approach, investing significant time into learning everything from the very basics to ensure that I have a well-rounded and complete understanding of ML.
+
+I spent a good few hours today compiling all the resources recommended across the Interwebs and organized them into this roadmap.
+
+1. Math:
+   - Calculus
+   - Linear algebra
+   - Discrete mathematics
+   - Probability theory
+   - Descriptive and inferential statistics
+2. Programming:
+   - Basic Python
+   - Advanced Python
+   - Algorithms
+   - SQL
+   - Second programming language: C++ or R
+3. Machine Learning:
+   - Supervised algorithms: regression and classification
+   - Unsupervised and semi-supervised algorithms: clustering, dimensionality reduction, graph-based algorithms
+   - Deep learning: CNNs and RNNs
+   - Reinforcement learning: dynamic programming, Monte Carlo methods, heuristic methods
+4. ML for Specific Tasks
+   - Computer vision
+   - Natural language processing
+   - Recommending systems
+   - Classic machine learning
+
+
+The pages I used to organize this roadmap are:
+
+1. Neptune Blog _ [How to Learn Machine Learning: Complete Guide From Years of Personal Experience](https://neptune.ai/blog/how-to-learn-machine-learning)
+2. 
+
 
 We decided to call these things "collections," a reasonable name for a collection of artworks. In order to create
 them, we developed a service called KAWS, named after the artist (whose works we wanted to put in several of these
