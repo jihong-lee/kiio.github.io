@@ -1,48 +1,42 @@
 @font-face {
-    font-family: 'Favorit-Light';
-    src: url('/fonts/ABCFavorit-Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Favorit-Book';
-    src: url('/fonts/ABCFavorit-Book.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-    
-body,html {
-height: 100%
-}
-    
-html {
-box-sizing: border-box;
-}
-    
-body {
-margin: 0;
-padding: 0;
-font-family: 'Favorit-Light',sans-serif;
-font-size: 11px;
-line-height: 15px;
-font-feature-settings: "calt";
-font-kerning: normal;
-text-rendering: optimizeLegibility;
-color: black;
-background-color: #e0e0e0;
-white-space: normal;
--webkit-text-size-adjust: 100%;
-text-size-adjust: 100%
-}
-    
-    .sm-whole-wrap {
-    position: relative;
-    min-height: calc(100% - 56px);
-    padding: 0;
-    margin: 0
+    font-family:'SMWeb';src:url(https://www.sulki-min.com/wp/sm-webfonts/webfonts/SM-Web-Font.woff2) format('woff2'),url(https://www.sulki-min.com/wp/sm-webfonts/webfonts/SM-Web-Font.otf) format('opentype');font-style:normal;font-weight:400
     }
     
+    @font-face {
+    font-family:'SMWebBold';src:url(https://www.sulki-min.com/wp/sm-webfonts/webfonts/SM-Web-Font-Bold.woff2) format('woff2'),url(https://www.sulki-min.com/wp/sm-webfonts/webfonts/SM-Web-Font-Bold.otf) format('opentype');font-style:normal;font-weight:700
+    }
+    
+    body,html {
+    height: 100%
+    }
+    
+    html {
+    box-sizing: border-box;
+    }
+    
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'SMWeb',sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-feature-settings: "calt";
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    color: black;
+    background-color: #e0e0e0;
+    white-space: normal;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%
+    }
+    
+    .kiio-whole-wrap {
+        position: relative;
+        min-height: calc(100% - 56px);
+        padding: 0;
+        margin: 0
+    }
+
     section {
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
@@ -104,9 +98,9 @@ text-size-adjust: 100%
     }
     
     a,a:active,a:focus,a:hover {
-    color: black;
-    text-decoration: none;
-    border-bottom: 1px solid black;
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid black;
     }
     
     @media not all and (pointer: coarse) {
@@ -142,7 +136,7 @@ text-size-adjust: 100%
     }
     
     h1,h2,h3 {
-    font-family: 'Favorit-Book';
+    font-family: 'SMWebBold';
     }
     
     h1,h5,h6,p,ul {
@@ -221,14 +215,14 @@ text-size-adjust: 100%
     background-color: transparent
     }
     
-    #sm-header {
-    display: grid;
-    grid-template-columns: 30px auto 30px;
-    margin: 0 28px 20px;
-    padding: 20px 0 0;
+    #kiio-header {
+        display: grid;
+        grid-template-columns: 30px auto 30px;
+        margin: 0 28px 20px;
+        padding: 20px 0 0;
     }
     
-    #sm-header a,.sm-entry-heading a,.sm-entry-img-wrap a {
+    #kiio-header a,.sm-entry-heading a,.sm-entry-img-wrap a {
         color: black;
         background-color:transparent;
         border:0;
@@ -237,22 +231,26 @@ text-size-adjust: 100%
     .reference-list a {
     }
     
-    #sm-navicon {
-    text-align: left;
+    #kiio-navicon {
+        text-align: left;
     }
     
     #sm-search {
     text-align: left;
     }
     
-    #sm-title {
-    text-align: center
+    #kiio-title {
+        text-align: center
+    }
+
+    #kiio-menu-icon {
+        font-size: 20px;
     }
     
-    #sm-language {
-    text-align: right
+    #kiio-language {
+        text-align: right
     }
-    
+
     #sm-menu {
     margin: 0 28px 0;
     padding: 0 14px 0;
@@ -307,7 +305,7 @@ text-size-adjust: 100%
     input {
     display: inline-block;
     width: 100%;
-    font-family: 'IBMPlexSansKR',sans-serif;
+    font-family: 'SMWeb',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
