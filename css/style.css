@@ -110,7 +110,7 @@
       }
     }
     
-    .sm-entry-img-wrap a, .sm-entry-img-wrap a:active, .sm-entry-img-wrap a:focus, .sm-entry-img-wrap a:hover {
+    .kiio-entry-img-wrap a, .kiio-entry-img-wrap a:active, .kiio-entry-img-wrap a:focus, .kiio-entry-img-wrap a:hover {
         border: 0;
         outline: 0;
         background-color:transparent;
@@ -193,7 +193,7 @@
     }
     
     .capitalization li:first-letter {
-    text-transform: capitalize
+        text-transform: capitalize
     }
     
     .wp-video {
@@ -222,7 +222,7 @@
         padding: 20px 0 0;
     }
     
-    #kiio-header a,.sm-entry-heading a,.sm-entry-img-wrap a {
+    #kiio-header a,.sm-entry-heading a,.kiio-entry-img-wrap a {
         color: black;
         background-color:transparent;
         border:0;
@@ -235,7 +235,7 @@
         text-align: left;
     }
     
-    #sm-search {
+    #kiio-search {
     text-align: left;
     }
     
@@ -251,61 +251,55 @@
         text-align: right
     }
 
-    #sm-menu {
-    margin: 0 28px 0;
-    padding: 0 14px 0;
-    word-break: keep-all;
-    display: none;
+    #kiio-menu {
+        margin: 0 28px 0;
+        padding: 0 14px 0;
+        word-break: keep-all;
+        display: none;
     }
     
-    #sm-menu a {
-    border-bottom: 1px solid transparent;
+    #kiio-menu a {
+        border-bottom: 1px solid transparent;
     }
     
-    #sm-menu a:active,#sm-menu a:focus,#sm-menu a:hover {
-    border-bottom: 1px solid black;
+    #kiio-menu a:active,#kiio-menu a:focus,#kiio-menu a:hover {
+        border-bottom: 1px solid black;
     }
     
-    .sm-menu-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    padding: 0;
-    margin: 0 -28px;
+    .kiio-menu-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding: 0;
+        margin: 0 -28px;
+    }   
+
+    .kiio-menu-col {
+        margin: 0;
+        padding: 0;
+        break-inside:avoid;
+        font-size: 12px;
     }
     
-    .sm-menu-cols-1 {
-    flex-grow: 1;
-    flex-basis: 408px;
-    padding: 0 14px 0;
-    column-count: 2;
-    column-gap: 28px;
+    .kiio-menu-cols {
+        flex-grow: 1;
+        flex-basis: 408px;
+        padding: 0 14px 0;
+        column-count: 4;
+        column-gap: 28px;
     }
     
-    .sm-menu-cols-2 {
-    flex-grow: 1;
-    flex-basis: 408px;
-    padding: 0 14px 0;
-    column-count: 2;
-    column-gap: 28px;
-    }
-    
-    .sm-menu-col {
-    margin: 0;
-    padding: 0;
-    break-inside:avoid;
-    }
-    
-    #sm-content,#sm-menu a,.crp-list-item-title a {
+    #kiio-content,#kiio-menu a,.crp-list-item-title a {
     display: default;
     }
     
     input {
     display: inline-block;
     width: 100%;
-    font-family: 'SMWeb',sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -318,12 +312,12 @@
     color: black;
     }
     
-    #sm-content {
+    #kiio-content {
     padding: 0 28px 10px;
     margin: 0;
     }
     
-    .sm-entry-heading {
+    .kiio-entry-heading {
     display: grid;
     grid-template-columns: auto 40px auto;
     padding: 0;
@@ -362,11 +356,10 @@
     column-count: 1;
     }
     
-    .sm-entry-img-wrap, .sm-additional-img-wrap {
+    .kiio-entry-img-wrap, .sm-additional-img-wrap {
         -webkit-column-break-inside: avoid;
-              page-break-inside: avoid;
-                   break-inside: avoid;
-    
+        page-break-inside: avoid;
+        break-inside: avoid;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -376,7 +369,7 @@
         margin: 0 -14px 0 -14px;
     }
     
-    .sm-entry-img-wrap p, .sm-additional-img-wrap p {
+    .kiio-entry-img-wrap p, .sm-additional-img-wrap p {
         flex-basis: 100%;
         font-size: 0;
         line-height: 0;
@@ -385,7 +378,7 @@
         text-align: center
     }
     
-    .sm-entry-img-wrap a, .sm-additional-img-wrap a {
+    .kiio-entry-img-wrap a, .sm-additional-img-wrap a {
         text-align: center
     }
     
@@ -396,10 +389,10 @@
         align-items: start;
         }
     
-    .sm-entry-txt-wrap {
-            -webkit-column-break-inside: avoid;
-              page-break-inside: avoid;
-                   break-inside: avoid;
+    .kiio-entry-txt-wrap {
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
         text-align: left;
         margin: 0;
         padding: 0;
@@ -432,19 +425,19 @@
     right: 28px
     }
     
-    #sm-footer,.wp-caption p {
-    font-size: 12px;
-    line-height: 15px;
+    #kiio-footer,.wp-caption p {
+        font-size: 12px;
+        line-height: 15px;
     }
     
-    #sm-footer {
-    text-align: center
+    #kiio-footer {
+        text-align: center
     }
     
-    #sm-footer {
-    margin: 0;
-    height: 40px;
-    padding: 10px 28px 0;
+    #kiio-footer {
+        margin: 0;
+        height: 40px;
+        padding: 10px 28px 0;
     }
     
     .wp-caption {
@@ -500,10 +493,6 @@
     line-height: 24px;
     }
     
-    .sm-cap:first-letter {
-    text-transform: capitalize
-    }
-    
     .crp-list-item-title + .crp-list {
     margin: -20px 0 0 0;
     }
@@ -557,14 +546,14 @@
             column-count: 2;
             column-gap: 28px;
         }	
-        .sm-entry-content .sm-entry-img-wrap {
+        .sm-entry-content .kiio-entry-img-wrap {
             text-align: right;
             justify-content: flex-end;
         }
-        .sm-entry-content .sm-entry-img-wrap p {
+        .sm-entry-content .kiio-entry-img-wrap p {
             text-align: right;
         }
-        .sm-entry-content .sm-entry-img-wrap img {
+        .sm-entry-content .kiio-entry-img-wrap img {
             object-position: top right;
         }
         .sm-entry-content .sm-additional-img-wrap {
@@ -577,7 +566,7 @@
         .sm-entry-content .sm-additional-img-wrap img {
             object-position: top left;
         }
-        .sm-entry-content .sm-entry-img-wrap .wp-caption p, .sm-entry-content .sm-additional-img-wrap .wp-caption p {
+        .sm-entry-content .kiio-entry-img-wrap .wp-caption p, .sm-entry-content .sm-additional-img-wrap .wp-caption p {
             text-align: right;
         }
         .sm-entry-content .sm-wide, .sm-entry-content .sm-wide p {
