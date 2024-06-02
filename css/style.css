@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'IBMPlexSansKR';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-family: 'Favorit-Light';
+    src: url('fonts/ABCFavorit-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'IBMPlexSansKR-Bold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-family: 'Favorit-Book';
+    src: url('fonts/ABCFavorit-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,7 +23,7 @@ box-sizing: border-box;
 body {
 margin: 0;
 padding: 0;
-font-family: 'NanumSquareNeo-Regular',sans-serif;
+font-family: 'Favorit-Light',sans-serif;
 font-size: 11px;
 line-height: 15px;
 font-feature-settings: "calt";
@@ -142,7 +142,7 @@ text-size-adjust: 100%
     }
     
     h1,h2,h3 {
-    font-family: 'IBMPlexSansKR-Bold';
+    font-family: 'Favorit-Book';
     }
     
     h1,h5,h6,p,ul {
