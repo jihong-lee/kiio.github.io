@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Favorit-Light';
-    src: url('fonts/ABCFavorit-Light.woff') format('woff');
+    src: url('/fonts/ABCFavorit-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Favorit-Book';
-    src: url('fonts/ABCFavorit-Book.woff') format('woff');
+    src: url('/fonts/ABCFavorit-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
