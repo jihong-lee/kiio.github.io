@@ -1,40 +1,40 @@
 @font-face {
-    font-family: 'NanumSquareNeo-Variable';
+    font-family: 'NanumSquareNeo-Regular';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'NanumSquareNeo-Variable';
+    font-family: 'NanumSquareNeo-Bold';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
 }
     
-    body,html {
-    height: 100%
-    }
+body,html {
+height: 100%
+}
     
-    html {
-    box-sizing: border-box;
-    }
+html {
+box-sizing: border-box;
+}
     
-    body {
-    margin: 0;
-    padding: 0;
-    font-family: 'SMWeb',sans-serif;
-    font-size: 15px;
-    line-height: 20px;
-    font-feature-settings: "calt";
-    font-kerning: normal;
-    text-rendering: optimizeLegibility;
-    color: black;
-    background-color: #e0e0e0;
-    white-space: normal;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%
-    }
+body {
+margin: 0;
+padding: 0;
+font-family: 'NanumSquareNeo-Regular',sans-serif;
+font-size: 15px;
+line-height: 20px;
+font-feature-settings: "calt";
+font-kerning: normal;
+text-rendering: optimizeLegibility;
+color: black;
+background-color: #e0e0e0;
+white-space: normal;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%
+}
     
     .sm-whole-wrap {
     position: relative;
@@ -142,7 +142,7 @@
     }
     
     h1,h2,h3 {
-    font-family: 'SMWebBold';
+    font-family: 'NanumSquareNeo-Bold';
     }
     
     h1,h5,h6,p,ul {
@@ -307,7 +307,7 @@
     input {
     display: inline-block;
     width: 100%;
-    font-family: 'SMWeb',sans-serif;
+    font-family: 'NanumSquareNeo-Regular',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
