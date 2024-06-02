@@ -382,6 +382,27 @@
         text-align: center
     }
     
+    .kiio-entry-img-wrap div{ 
+        position: absolute; 
+        bottom: 0; 
+        right: 0;     
+        color: white; 
+        margin-bottom: 5px; 
+        opacity: 0; 
+        visibility: hidden; 
+        -webkit-transition: visibility 0s, opacity 0.5s linear;  
+        transition: visibility 0s, opacity 0.5s linear; 
+    } 
+   
+    .kiio-entry-img-wrap:hover{ 
+        cursor: pointer; 
+    } 
+    
+    .kiio-entry-img-wrap:hover div{ 
+        visibility: visible; 
+        opacity: 1;  
+    } 
+    
     .sm-wide {
         column-span: all;
         justify-content: center;
